@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.xproteam.tolehealty">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="id.xproteam.tolehealty.activities.KurusActivity"
+            android:theme="@style/AppTheme.PopUpIMT"
+            android:parentActivityName="id.xproteam.tolehealty.activities.IMTActivity">
+        </activity>
+        <activity android:name="id.xproteam.tolehealty.activities.NormalActivity"
+            android:theme="@style/AppTheme.PopUpIMT"
+
+            android:parentActivityName="id.xproteam.tolehealty.activities.IMTActivity"/>
+        <activity android:name="id.xproteam.tolehealty.activities.GemukActivity"
+            android:theme="@style/AppTheme.PopUpIMT"
+
+            android:parentActivityName="id.xproteam.tolehealty.activities.IMTActivity"/>
+        <activity android:name="id.xproteam.tolehealty.activities.ObesitasActivity"
+            android:theme="@style/AppTheme.PopUpIMT"
+
+            android:parentActivityName="id.xproteam.tolehealty.activities.IMTActivity"/>
+        <activity
+            android:name="id.xproteam.tolehealty.activities.ArtikelTipsActivity"
+            android:parentActivityName="id.xproteam.tolehealty.activities.TipsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.xproteam.tolehealty.activities.ArtikelBeritaActivity"
+            android:parentActivityName="id.xproteam.tolehealty.activities.BeritaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.xproteam.tolehealty.activities.IMTActivity"
+            android:parentActivityName="id.xproteam.tolehealty.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.xproteam.tolehealty.activities.TipsActivity"
+            android:parentActivityName="id.xproteam.tolehealty.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.xproteam.tolehealty.activities.VideoActivity"
+            android:parentActivityName="id.xproteam.tolehealty.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.xproteam.tolehealty.activities.BeritaActivity"
+            android:parentActivityName="id.xproteam.tolehealty.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.xproteam.tolehealty.activities.ObesitasActivity$SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="id.xproteam.tolehealty.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
